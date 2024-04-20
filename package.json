@@ -1,11 +1,15 @@
 {
 	"scripts": {
-		"start": "tiddlywiki . --listen port=5000",
-		"build": "rollup -c"
+		"dev": "nodemon --watch src -x pnpm run start",
+		"start": "pnpm run build && pnpm run update:timestamps && pnpm run serve ",
+		"build": "rollup -c",
+		"update:timestamps": "node cli/update-timestamps.js",
+		"serve": "tiddlywiki . --listen port=5000"
 	},
 	"type": "module",
 	"devDependencies": {
 		"@rollup/plugin-node-resolve": "^15.2.3",
+		"nodemon": "^3.1.0",
 		"rollup": "^4.14.3",
 		"tiddlywiki": "^5.3.3",
 		"tw5-typed": "^0.5.9"

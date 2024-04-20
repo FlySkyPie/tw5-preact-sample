@@ -23,6 +23,10 @@ class ClockWidget extends widget_js.widget {
   constructor(parseTreeNode, options) {
     super(parseTreeNode, options);
     this.logger = new $tw.utils.Logger("clock-widget");
+
+    /**
+     * Example to using third party module.
+     */
     this.id = nanoid();
   }
 
