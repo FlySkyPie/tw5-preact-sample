@@ -1,8 +1,15 @@
 {
 	"scripts": {
-		"start": "tiddlywiki . --listen port=5000"
+		"start": "tiddlywiki . --listen port=5000",
+		"build": "rollup -c"
 	},
+	"type": "module",
 	"devDependencies": {
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"rollup": "^4.14.3",
 		"tiddlywiki": "^5.3.3"
+	},
+	"dependencies": {
+		"nanoid": "^5.0.7"
 	}
 }
