@@ -4,4 +4,4 @@ tags:
 title: Widget Demo
 type: text/vnd.tiddlywiki
 
-<$clock/>
+<$clock-widget/>

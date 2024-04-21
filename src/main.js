@@ -62,4 +62,4 @@ class ClockWidget extends Widget {
   }
 }
 
-export { ClockWidget as clock };
+export { ClockWidget as "clock-widget" };

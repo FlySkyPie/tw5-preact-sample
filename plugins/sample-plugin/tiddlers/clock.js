@@ -74,4 +74,4 @@ class ClockWidget extends widget_js.widget {
   }
 }
 
-exports.clock = ClockWidget;
+exports["clock-widget"] = ClockWidget;
