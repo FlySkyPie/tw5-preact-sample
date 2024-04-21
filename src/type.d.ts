@@ -1,3 +1,13 @@
 declare module "@tiddlygit/tiddlywiki" {
   export * from "tiddlywiki";
 }
+
+declare module "*.module.css" {
+  const content: { readonly [key: string]: string };
+  export default content;
+}
+
+declare module "*.module.scss" {
+  const content: { readonly [key: string]: string };
+  export default content;
+}

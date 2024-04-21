@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"dev": "nodemon --watch src -x pnpm run start",
+		"dev": "nodemon -x pnpm run start",
 		"start": "pnpm run build && pnpm run update:timestamps && pnpm run serve ",
 		"build": "rollup -c",
 		"update:timestamps": "node cli/update-timestamps.js",
@@ -8,13 +8,21 @@
 	},
 	"type": "module",
 	"devDependencies": {
+		"@babel/preset-react": "^7.24.1",
+		"@rollup/plugin-alias": "^5.1.0",
+		"@rollup/plugin-babel": "^6.0.4",
 		"@rollup/plugin-node-resolve": "^15.2.3",
 		"nodemon": "^3.1.0",
+		"postcss": "^8.4.38",
 		"rollup": "^4.14.3",
+		"rollup-plugin-postcss": "^4.0.2",
 		"tiddlywiki": "^5.3.3",
 		"tw5-typed": "^0.5.9"
 	},
 	"dependencies": {
-		"nanoid": "^5.0.7"
+		"nanoid": "^5.0.7",
+		"node-sass": "^9.0.0",
+		"preact": "^10.20.2",
+		"sass": "^1.75.0"
 	}
 }
