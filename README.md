@@ -1,14 +1,16 @@
-# Tiddlywiki5 Plugin Development Template
+# Tiddlywiki5 Plugin Development with JSX (Preact)
 
 This template used to development Single File Widget (similar concept with Single-page application).
 
 ## Feature
 
-- The widget sample is copy from [TiddlyWiki/Dev](https://tiddlywiki.com/dev/#Using%20ES2016%20for%20Writing%20Plugins)
+- The widget sample is copy from https://codepen.io/ykadosh/pen/KKezJzz
 - Write Javascript Widget in ES6, and convert to CommonJS by Rollup.
 - Common tools for Web Frontend developer, e.g. Rollup, nodemon.
 - Auto restart Tiddlywiki server and reload browser page when bundle is updated.
 - Bundle third party module.
+- Develop widget with JSX (Preact).
+- CSS module.
 
 ## How it work?
 
